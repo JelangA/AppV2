@@ -36,11 +36,14 @@ public class LoginActivity extends AppCompatActivity {
 
                 username = txtusername.getText().toString();
                 password = txtpassword.getText().toString();
-
-                BackgroundTaskAuth taskAuth = new BackgroundTaskAuth(getApplicationContext());
-                taskAuth.execute("login", username, password);
+                
+                if (username.length() != 0 && password.length() != 0){
+                    BackgroundTaskAuth taskAuth = new BackgroundTaskAuth(getApplicationContext());
+                    taskAuth.execute("login", username, password);
+                }else {
+                    Toast.makeText(LoginActivity.this, "Mohon Lengkapi Data", Toast.LENGTH_SHORT).show();
+                }
             }
-
         });
 
         btnregister.setOnClickListener(new View.OnClickListener() {

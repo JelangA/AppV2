@@ -3,6 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/jelang/AppV2/app/src/main/res/drawable/circle_shape.xml" value="0.144" />
+        <entry key="..\:/jelang/AppV2/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.144" />
+        <entry key="..\:/jelang/AppV2/app/src/main/res/drawable/ic_search.xml" value="0.144" />
+        <entry key="..\:/jelang/AppV2/app/src/main/res/layout/activity_card_list.xml" value="0.14130434782608695" />
+        <entry key="..\:/jelang/AppV2/app/src/main/res/layout/activity_menu.xml" value="0.14130434782608695" />
+        <entry key="..\:/jelang/AppV2/app/src/main/res/layout/activity_register.xml" value="0.14130434782608695" />
+        <entry key="..\:/jelang/AppV2/app/src/main/res/layout/card_list.xml" value="0.14130434782608695" />
+        <entry key="..\:/jelang/AppV2/app/src/main/res/layout/fragment_account.xml" value="0.10960144927536232" />
+        <entry key="..\:/jelang/AppV2/app/src/main/res/layout/fragment_dashboard.xml" value="0.14130434782608695" />
+        <entry key="..\:/jelang/AppV2/app/src/main/res/layout/fragment_home.xml" value="0.14130434782608695" />
+        <entry key="..\:/jelang/AppV2/app/src/main/res/layout/fragment_notifications.xml" value="0.14130434782608695" />
+        <entry key="..\:/jelang/AppV2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17552083333333332" />
         <entry key="..\:/jelang/mobile/native java/latihan LKS/TokoV2/app/src/main/res/layout/activity_login.xml" value="0.17074275362318841" />
         <entry key="..\:/jelang/mobile/native java/latihan LKS/TokoV2/app/src/main/res/layout/activity_menu.xml" value="0.17074275362318841" />
         <entry key="..\:/jelang/mobile/native java/latihan LKS/TokoV2/app/src/main/res/layout/activity_register.xml" value="0.1" />

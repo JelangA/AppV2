@@ -1,6 +1,8 @@
 package com.example.tokov2.Activity;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.ListView;
 
 import com.example.tokov2.R;
 import com.example.tokov2.databinding.ActivityMenuBinding;
@@ -16,6 +18,8 @@ public class MenuActivity extends AppCompatActivity {
 
     private ActivityMenuBinding binding;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +31,7 @@ public class MenuActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
+                R.id.navigation_home, R.id.navigation_dashboard)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_menu);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);

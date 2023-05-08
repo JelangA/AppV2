@@ -37,6 +37,7 @@ public class BackgroundTaskAuth extends AsyncTask<String, String, String> {
     protected String doInBackground(String... params) {
         String type = params[0];
 
+
         if (type.equals("login")){
             String username = params[1];
             String password = params[2];
@@ -169,10 +170,14 @@ public class BackgroundTaskAuth extends AsyncTask<String, String, String> {
     @Override
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
-        Toast.makeText(context, result, Toast.LENGTH_LONG).show();
 
-        Intent intent = new Intent(context, MenuActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        context.startActivity(intent);
+        if (result.contains("Data not found")){
+            Toast.makeText(context, "Username atau Password Salah", Toast.LENGTH_LONG).show();
+        }else {
+            Intent intent = new Intent(context, MenuActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
+            Toast.makeText(context, "Authentifikasi Berhasil", Toast.LENGTH_SHORT).show();
+        }
     }
 }

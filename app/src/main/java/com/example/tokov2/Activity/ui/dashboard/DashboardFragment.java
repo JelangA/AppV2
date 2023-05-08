@@ -9,22 +9,19 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-
-import com.example.tokov2.databinding.FragmentDashboardBinding;
-
+import com.example.tokov2.databinding.FragmentAccountBinding;
 
 public class DashboardFragment extends Fragment {
 
-    private FragmentDashboardBinding binding;
+    private FragmentAccountBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
 
-        binding = FragmentDashboardBinding.inflate(inflater, container, false);
+        binding = FragmentAccountBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textDashboard;
         return root;
     }
 
